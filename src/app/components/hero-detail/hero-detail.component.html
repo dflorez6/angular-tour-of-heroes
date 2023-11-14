@@ -1,0 +1,14 @@
+<div *ngIf="hero">
+  <h2>{{ hero.name | uppercase }} Details</h2>
+  <div><span>id: </span>{{ hero.id }}</div>
+  <div>
+    <label for="hero-name">Hero name: </label>
+    <input id="hero-name" [(ngModel)]="hero.name" placeholder="name" />
+  </div>
+</div>
+<!-- 
+    The ngModel directive in Angular is used for two-way data binding between the view and the model. 
+    It allows you to bind the value of an HTML input, select, or textarea element to a property in the 
+    component class. This means that changes in the view will update the model, and changes in the model 
+    will update the view automatically.
+-->
